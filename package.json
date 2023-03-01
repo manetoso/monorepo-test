@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=app",
+    "build": "npm run build --workspace=app",
     "start": "npm run serve --workspace=api",
     "serve": "npm run serve --workspace=api",
     "dev": "npm run dev --workspace=app"
