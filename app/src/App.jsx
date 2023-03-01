@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg';
 import './App.css';
 
 const isDev = process.env.NODE_ENV === 'development';
-const baseURL = isDev ? 'http://localhost:3001' : '';
+const baseURL = isDev ? 'http://localhost:3001' : 'https://manetoso-monorepo-test.onrender.com';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
