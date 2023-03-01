@@ -1,0 +1,30 @@
+{
+  "name": "14-monorepo-test",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "api",
+    "app"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build --workspace=app",
+    "start": "npm run serve --workspace=api",
+    "serve": "npm run serve --workspace=api",
+    "dev": "npm run dev --workspace=app"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/stardust/eslintrc.json",
+    "env": {
+      "jest": false
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "prettier": "^2.8.4",
+    "standard": "^17.0.0"
+  }
+}
